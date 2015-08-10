@@ -22,7 +22,12 @@ describe(Triangle) do
 
     it("returns 'isosceles' if two of three sides are equal") do
       test_triangle = Triangle.new(4, 4, 6)
-      expect(test_triangle.type?()).to(eq("isosceles"))       
+      expect(test_triangle.type?()).to(eq("isosceles"))
+    end
+
+    it("returns 'scalene' if no sides are equal") do
+      test_triangle = Triangle.new(4, 5, 6)
+      expect(test_triangle.type?()).to(eq("scalene"))
     end
   end
 

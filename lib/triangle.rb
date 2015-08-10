@@ -14,8 +14,11 @@ class Triangle
     if @length.==(@width) && @length.==(@height)
       "equilateral"
 
-    else @length.==(@width) || @length.==(@height) || @width.==(@height)
+    elsif @length.==(@width) || @length.==(@height) || @width.==(@height)
       "isosceles"
+
+    else
+      "scalene"
 
     end
   end
