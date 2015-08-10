@@ -15,7 +15,10 @@ describe(Triangle) do
     end
 
 
+    it("returns 'equilateral' if all sides are equal") do
+      test_triangle = Triangle.new(4, 4, 4)
+      expect(test_triangle.type?()).to(eq("equilateral"))
+    end
   end
-
 
 end

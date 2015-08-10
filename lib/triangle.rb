@@ -10,4 +10,10 @@ class Triangle
     (@length.+(@width)).>(@height) && (@length.+(@height)).>(@width) && (@width.+(@height)).>(@length)
   end
 
+  define_method(:type?) do
+    if @length.==(@width) && @length.==(@height)
+      "equilateral"
+    end
+  end
+
 end
