@@ -13,6 +13,10 @@ class Triangle
   define_method(:type?) do
     if @length.==(@width) && @length.==(@height)
       "equilateral"
+
+    else @length.==(@width) || @length.==(@height) || @width.==(@height)
+      "isosceles"
+
     end
   end
 
