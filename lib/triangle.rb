@@ -7,6 +7,7 @@ class Triangle
 
 
   define_method(:triangle?) do
-    false
+    (@length.+(@width)).>(@height) && (@length.+(@height)).>(@width) && (@width.+(@height)).>(@length)
   end
+
 end
